@@ -4,7 +4,7 @@ This application was developed as part of a **training assignment** and provides
 + user authorization;
 + new user registration;
 + encrypting text of any length with a given key according to AES standard;
-+ decrypting text of any length with a given key according to AES standard;
++ decrypting text of any length with a given key according to AES standard.
 
 This implementation of AES cipher works with 128-bit key length, but it is only in encapsulated program mechanisms.
 The users can use a key of any length due to the use of digest of key during key processing.
@@ -55,4 +55,4 @@ By the way, this is how MD5 is used in the AES encryption process.
 The following sources were used to implement this program:
 
 + official documentation of AES - [FIPS 197](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf);
-+ description of the MD5 algorithm - [MD5 Wiki](https://en.wikipedia.org/wiki/MD5);
++ description of the MD5 algorithm - [MD5 Wiki](https://en.wikipedia.org/wiki/MD5).
