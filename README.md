@@ -54,5 +54,5 @@ By the way, this is how MD5 is used in the AES encryption process.
 ## References
 The following sources were used to implement this program:
 
-+ official documentation of AES - [FIPS 197] (https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf);
-+ description of the MD5 algorithm - [MD5 Wiki] (https://en.wikipedia.org/wiki/MD5);
++ official documentation of AES - [FIPS 197](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf);
++ description of the MD5 algorithm - [MD5 Wiki](https://en.wikipedia.org/wiki/MD5);
