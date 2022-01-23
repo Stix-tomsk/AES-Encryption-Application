@@ -34,6 +34,8 @@ string ciphertext = aes.encrypt(inputText, key);
 string decryptedText = aes.decrypt(ciphertext, key);
 ```
 
+***Also for this to work you have to use the [System.Collections](https://docs.microsoft.com/en-us/dotnet/api/system.collections?view=net-6.0) namespace***
+
 ## About MD5
 The Message Digest 5 (MD5) is 128-bit hash algorithm designed to create message digests of arbitrary length.
 MD5 processes an any length string into a fixed length output string of 128 bits.
