@@ -324,33 +324,15 @@ public class AES128
         // If it's decrypting the shift is performed to the right
         public byte[,] shiftRows(byte[,] state, int inv)
         {
-            int count = 1;
 
-            if (inv == 0) // Encrypting
+            for (int i = 1; i < nb; i++)
             {
-                for (int i = 1; i < nb; i++)
-                {
-                    byte[] stringFromState = new byte[4];
-                    for (int j = 0; j < 4; j++)
-                        stringFromState[j] = state[i, j];
-                    stringFromState = shift(stringFromState, count, 0);
-                    for (int j = 0; j < 4; j++)
-                        state[i, j] = stringFromState[j];
-                    count += 1;
-                }
-            }
-            else // Decrypting
-            {
-                for (int i = 1; i < nb; i++)
-                {
-                    byte[] stringFromState = new byte[4];
-                    for (int j = 0; j < 4; j++)
-                        stringFromState[j] = state[i, j];
-                    stringFromState = shift(stringFromState, count, 1);
-                    for (int j = 0; j < 4; j++)
-                        state[i, j] = stringFromState[j];
-                    count += 1;
-                }
+                byte[] stringFromState = new byte[4];
+                for (int j = 0; j < 4; j++)
+                    stringFromState[j] = state[i, j];
+                stringFromState = shift(stringFromState, i, inv);
+                for (int j = 0; j < 4; j++)
+                    state[i, j] = stringFromState[j];
             }
 
             return state;
